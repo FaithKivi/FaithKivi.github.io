@@ -3,7 +3,7 @@
 <html lang="cn-zh">
 <head>
     <meta charset="utf-8" />
-    <title>初见 | FaithKivi&#39;s</title>
+    <title>Archives | FaithKivi&#39;s</title>
     <meta name="author" content="FaithKivi" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -45,13 +45,7 @@
 
 
 
-
-
-
-<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
-
+<script src="/js/lib/search.js"></script>
 
 
 
@@ -163,64 +157,166 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>初见</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/10/9
-        </span>
-        
-        <span class="category">
-            <a href="/categories/%E6%9D%82%E8%B0%88/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                杂谈
-            </a>
-        </span>
-        
-        
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
             
-            
-            <span class="tag">
-                
-                <a href="/tags/%E5%88%9D%E8%A7%81/" style="color: #ffa2c4">
-                    初见
+<div id="archives">
+    
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    
+    <div id="timeline-wrap" ref="timeline">
+        
+        <div class="timeline" data-title="初见">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/10/9</div>
+                <a href="/2024/10/09/%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BA%86/">
+                    <h3>初见</h3>
                 </a>
-            </span>
-            
-        </span>
-        
-    </div>
-    
-    <div class="content" v-pre>
-        <p>说实话，大一上学期的时候就像开始写博客了，当时搭了一半的博客，后来因为各种原因，很多大一想做的事情一直搁置到现在才开始做起来（<s>其实是因为我懒</s>🤣），也是为了弥补一些自己当时的一些遗憾，还有很多自己没去做的事情，很多想要读的书没有读，想要学的东西没有学，总之，路途遥远。</p>
-<p>​	博客的建立也是顺便给我发发牢骚，写一些自己想写的，例如心得、例如自己所学的知识以及自己在踩到的各种坑。希望以后看到这些的自己，能够从中得到些什么。或许，命运的齿轮从某个时候开始，就开始转动了。</p>
-
-    </div>
-    
-    
-    
-    
-    
-        <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
-        <div id="comment">
-            <div id="waline-container">
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%9D%82%E8%B0%88/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            杂谈
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%88%9D%E8%A7%81/" style="color: #ffa2c4">
+                                初见
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
             </div>
         </div>
         
-
-    
-    
+        <div class="timeline" data-title="往生茶">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/10/11</div>
+                <a href="/2024/10/11/%E5%BE%80%E7%94%9F%E8%8C%B6/">
+                    <h3>往生茶</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%9D%82%E8%B0%88/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            杂谈
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E6%96%87%E7%AB%A0/" style="color: #ffa2c4">
+                                文章
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="卡尔曼滤波器总结">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/10/14</div>
+                <a href="/2024/10/14/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%80%BB%E7%BB%93/">
+                    <h3>卡尔曼滤波器总结</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            笔记
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/" style="color: #ffa2c4">
+                                卡尔曼滤波
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="机器学习笔记（一）">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/11/13</div>
+                <a href="/2024/11/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    <h3>机器学习笔记（一）</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            笔记
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="color: #00bcd4">
+                                机器学习
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
             <footer id="footer">
@@ -251,29 +347,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-<script>
-    Waline.init({
-        el: "#waline-container",
-        serverURL: "https://faithkivi-talk.vercel.app",
-        commentCount: true,
-        pageview: false,
-        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
-        meta: "nick,mail,link".split(","),
-        requiredMeta: "nick".split(","),
-        lang: "zh-CN",
-        wordLimit: 0,
-        pageSize: "10",
-        login: "enable",
-        
-    });
-</script>
-
-
-
     
 </body>
 </html>
